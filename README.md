@@ -1,5 +1,17 @@
 # demo20220330 Project
 
+Remember to start OPS Docker with:
+
+```sh
+docker \
+  run --rm -d \
+  -p 8080:8080 \
+  --name ads-ml-service-demo \
+  ads-ml-service
+```
+
+ref: https://github.com/IBM/open-prediction-service-hub/blob/bbfc3f59e7638397d593ad8f5803844e7b3c7249/ops-implementations/ads-ml-service/README.md?plain=1#L29-L35
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
