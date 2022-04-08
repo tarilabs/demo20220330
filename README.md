@@ -43,7 +43,7 @@ If you want to build an _über-jar_, execute the following command:
 
 The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
 
-## Creating a native executable
+<!-- ## Creating a native executable
 
 You can create a native executable using: 
 ```shell script
@@ -57,12 +57,20 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./target/demo20220330-1.0.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
+If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling. -->
 
 ## Related Guides
 
 - SmallRye OpenAPI ([guide](https://quarkus.io/guides/openapi-swaggerui)): Document your REST APIs with OpenAPI - comes with Swagger UI
 - Kogito - Decisions (DMN) ([guide](https://quarkus.io/guides/kogito-dmn)): Add Kogito decision (DMN) capabilities - Include Drools DMN engine
+
+## Additional Guides
+
+- SmallRye OpenAPI UI Forms ([guide](https://github.com/smallrye/smallrye-open-api/tree/main/ui/open-api-ui-forms#readme)): Automatic form generation
+
+Watch the video on YouTube:
+
+[![Watch the video](https://img.youtube.com/vi/av_DoGNl2jI/hqdefault.jpg)](https://youtu.be/av_DoGNl2jI)
 
 ## Provided Code
 
