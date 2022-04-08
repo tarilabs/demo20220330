@@ -36,9 +36,33 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-rest-client-jackson</artifactId>
+      <groupId>com.ibm.decision</groupId>
+      <artifactId>ops-client-sdk</artifactId>
+      <version>2.5.7-SNAPSHOT</version>
     </dependency>
+    <!-- as Quarkus platform bom uses a different version of okhttp -->
+    <!-- ref https://github.com/instagram4j/instagram4j/issues/533#issuecomment-831366288 -->
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>4.9.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp-urlconnection</artifactId>
+      <version>4.9.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>logging-interceptor</artifactId>
+      <version>4.9.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.squareup.okio</groupId>
+      <artifactId>okio</artifactId>
+      <version>2.8.0</version>
+    </dependency>
+    <!-- /as Quarkus platform bom uses a different version of okhttp -->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-smallrye-openapi</artifactId>

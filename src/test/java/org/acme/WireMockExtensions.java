@@ -31,7 +31,7 @@ public class WireMockExtensions implements QuarkusTestResourceLifecycleManager {
                             "{\r\n    \"result\": {\r\n        \"predictions\": \"true\",\r\n        \"scores\": [\r\n            0.12923076923076923,\r\n            0.8707692307692307\r\n        ],\r\n        \"names\": [\r\n            \"false\",\r\n            \"true\"\r\n        ]\r\n    }\r\n}"
                         )));
 
-        return Collections.singletonMap("org.acme.demo20220330.OPSClient/mp-rest/url", wireMockServer.baseUrl()); 
+        return Collections.singletonMap("ibm.ops.url", wireMockServer.baseUrl()); 
     }
 
     @Override
