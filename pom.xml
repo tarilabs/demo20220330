@@ -34,6 +34,28 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <repositories>
+    <repository>
+        <id>github</id>
+        <name>GitHub Packages</name>
+        <url>https://maven.pkg.github.com/IBM/open-prediction-service-hub</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+  </repositories>
+  <!--
+    please note currently github packages do not allow anonymous access, but it's sufficient a Personal Access Token with `read:packages` as the only auth
+    then in the ~/.m2/settings.xml you can place:
+    <server>
+      <id>github</id>
+      <username> ...your github username here... </username>
+      <password> ...place the `read:packages` PAT here... </password>
+    </server>
+  -->
   <dependencies>
     <dependency>
       <groupId>com.ibm.decision</groupId>
